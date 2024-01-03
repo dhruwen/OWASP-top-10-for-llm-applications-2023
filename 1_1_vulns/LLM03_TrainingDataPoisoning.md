@@ -38,10 +38,10 @@ Data poisoning is considered an integrity attack because tampering with the trai
    1. An "MLSecOps" approach could be to include adversarial robustness to the training lifecycle with the auto poisoning technique.
    2. An example repository of this would be [Autopoison](https://github.com/azshue/AutoPoison) testing, including both attacks such as Content Injection Attacks (“(attempting to promote a brand name in model responses”) and Refusal Attacks (“always making the model refuse to respond”) that can be accomplished with this approach.
 10. Testing and Detection, by measuring the loss during the training stage and analyzing trained models to detect signs of a poisoning attack by analyzing model behavior on specific test inputs.
-   1. Monitoring and alerting on number of skewed responses exceeding a threshold.
-   2. Use of a human loop to review responses and auditing.
-   3. Implement dedicated LLMs to benchmark against undesired consequences and train other LLMs using [reinforcement learning techniques](https://wandb.ai/ayush-thakur/Intro-RLAIF/reports/An-Introduction-to-Training-LLMs-Using-Reinforcement-Learning-From-Human-Feedback-RLHF---VmlldzozMzYyNjcy).
-   4. Perform LLM-based [red team exercises](https://www.anthropic.com/index/red-teaming-language-models-to-reduce-harms-methods-scaling-behaviors-and-lessons-learned) or [LLM vulnerability scanning](https://github.com/leondz/garak) into the testing phases of the LLM's lifecycle.
+    a. Monitoring and alerting on number of skewed responses exceeding a threshold.
+    b. Use of a human loop to review responses and auditing.
+    c. Implement dedicated LLMs to benchmark against undesired consequences and train other LLMs using [reinforcement learning techniques](https://wandb.ai/ayush-thakur/Intro-RLAIF/reports/An-Introduction-to-Training-LLMs-Using-Reinforcement-Learning-From-Human-Feedback-RLHF---VmlldzozMzYyNjcy).
+    d. Perform LLM-based [red team exercises](https://www.anthropic.com/index/red-teaming-language-models-to-reduce-harms-methods-scaling-behaviors-and-lessons-learned) or [LLM vulnerability scanning](https://github.com/leondz/garak) into the testing phases of the LLM's lifecycle.
 
 ### Example Attack Scenarios
 
